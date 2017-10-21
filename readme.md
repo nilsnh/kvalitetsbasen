@@ -12,7 +12,7 @@ Alternativt: Du kan også importere .sql filen som ligger i data/ mappen i ein l
 
 ## Spanande spørringer
 
-Når du har databasen oppe og går så kan du bruke en MySQL klient til å stille spørringer mot dataene.
+Når du har databasen oppe og går så kan du bruke ein MySQL klient til å stille sql spørringer mot dataene.
 
 ```
 -- Count number of reports grouped by year
