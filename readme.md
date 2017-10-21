@@ -22,6 +22,8 @@ GROUP BY year
 ORDER BY year DESC;
 ```
 
+!["Skjermskudd av databaseresultat"](/screenshot.png?raw=true "")
+
 Foreslå gjerne andre spørringer å inkludere enten som pull requests til dette prosjektet eller ved å legge det til som issues. :)
 
 Tips: Dersom du vil laste ned ein rapport så kan du bruke url `https://kvalitetsbasen.app.uib.no/rapport.php?rapport_id=` og legge til rapportid på slutten.
