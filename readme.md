@@ -2,6 +2,8 @@
 
 Dette prosjektet inneheld eit uttak av [kvalitetsbasen](https://kvalitetsbasen.app.uib.no) til Universitetet i Bergen.
 
+**Bakgrunnen** for dette prosjektet er at eg i studiene mine ved UiB leverte inn nokre  studieevalueringar. Og då byrja eg å lure på kor desse evalueringane tok vegen, kva omfanget var og kva for konsekvenser dei får over tid. Etter å ha blitt tipsa om at UiB samler emneevalueringane i Kvalitetsbasen så spurde eg om eg kunne få tilgang til dei underliggande dataene. 
+
 ## Bruksanvisning
 
 1. Last ned dette prosjektet.
