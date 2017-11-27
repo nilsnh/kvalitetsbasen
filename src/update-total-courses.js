@@ -6,7 +6,7 @@ const bluebird = require("bluebird");
 main();
 
 /**
- *  Download course overview and update table 'emne_liste'
+ *  Download course data and update table 'emne_liste'
  */
 async function main() {
   console.log("Starting work");
