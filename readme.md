@@ -27,6 +27,16 @@ Når du har databasen oppe og går så kan du bruke ein MySQL klient til å stil
 sql spørringer mot dataene.
 
 ```sql
+-- Count number of reports grouped by year
+SELECT DISTINCT CAST(LEFT(rap.filnavn, 4) as INTEGER) as year, count(*) as num_reports_total
+FROM rapport rap
+GROUP BY year
+ORDER BY year DESC;
+```
+
+!["Skjermskudd av databaseresultat"](/screenshot.png?raw=true)
+
+```sql
 -- How many courses are evaluated per year?
 select emn.aar as year, count(*) as evaluted_courses, emn_total.total_courses
 from emne_liste emn,
@@ -60,16 +70,6 @@ where emn.emnekode = eval.kode
 GROUP BY emn.aar, emn.terminkode
 ORDER BY emn.aar DESC;
 ```
-
-```sql
--- Count number of reports grouped by year
-SELECT DISTINCT CAST(LEFT(rap.filnavn, 4) as INTEGER) as year, count(*) as num_reports_total
-FROM rapport rap
-GROUP BY year
-ORDER BY year DESC;
-```
-
-!["Skjermskudd av databaseresultat"](/screenshot.png?raw=true)
 
 Foreslå gjerne andre spørringer å inkludere enten som pull requests til dette
 prosjektet eller ved å legge det til som issues. :)
