@@ -1,0 +1,25 @@
+{
+  "name": "studiekvalitets-db",
+  "version": "1.0.0",
+  "description": "Dette prosjektet inneheld eit uttak av [kvalitetsbasen](https://kvalitetsbasen.app.uib.no) til Universitetet i Bergen.",
+  "main": "importJSONIntoDB.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilsnh/kvalitetsbasen.git"
+  },
+  "author": "",
+  "license": "NLOD",
+  "bugs": {
+    "url": "https://github.com/nilsnh/kvalitetsbasen/issues"
+  },
+  "homepage": "https://github.com/nilsnh/kvalitetsbasen#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "dotenv": "^4.0.0",
+    "mysql2": "^1.5.1",
+    "node-fetch": "^1.7.3"
+  }
+}
