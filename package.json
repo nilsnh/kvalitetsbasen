@@ -5,6 +5,7 @@
     "Dette prosjektet inneheld eit uttak av [kvalitetsbasen](https://kvalitetsbasen.app.uib.no) til Universitetet i Bergen.",
   "main": "importJSONIntoDB.js",
   "scripts": {
+    "update-elm-data": "node src/export-results.js",
     "update-total-courses":
       "node src/update-total-courses.js && mysqldump -h 127.0.0.1 -u root -pquality uib_quality emne_liste > data/emne_liste.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
