@@ -26,7 +26,7 @@ lokal MySQL 5.5 database.
 Når du har databasen oppe og går så kan du bruke ein MySQL klient til å stille
 sql spørringer mot dataene.
 
-```
+```sql
 -- How many courses are evaluated per year?
 select emn.aar as year, count(*) as evaluted_courses, emn_total.total_courses
 from emne_liste emn,
@@ -43,7 +43,7 @@ GROUP BY emn.aar
 ORDER BY emn.aar DESC;
 ```
 
-```
+```sql
 -- How many courses are evaluated per semester, per year?
 select emn.aar as year, emn.terminkode as term, count(*) as evaluted_courses, emn_total.total_courses
 from emne_liste emn,
@@ -61,7 +61,7 @@ GROUP BY emn.aar, emn.terminkode
 ORDER BY emn.aar DESC;
 ```
 
-```
+```sql
 -- Count number of reports grouped by year
 SELECT DISTINCT CAST(LEFT(rap.filnavn, 4) as INTEGER) as year, count(*) as num_reports_total
 FROM rapport rap
